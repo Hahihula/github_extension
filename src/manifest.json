@@ -1,0 +1,16 @@
+{
+  "name": "MicroGithubExtension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Making GitHub better place",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Inject!"
+  },
+  "permissions": ["tabs", "*://*.github.com/*"]
+}

@@ -7,6 +7,6 @@
     window.open(window.location.origin +'/' + forkedFrom.title.split(':')[0]+'/tree/'+forkedFrom.title.split(':')[1],'self')
   }
   forkedFrom.style.cursor = 'pointer';
-  forkedFrom.style.border = '1px solid orange'; 
-  
+  forkedFrom.classList.add('btn')
+  forkedFrom.classList.add('btn-sm')
 })();

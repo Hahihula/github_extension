@@ -1,7 +1,7 @@
 {
   "name": "MicroGithubExtension",
   "short_name": "Micro GitHub extension",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "Making GitHub better place",
   "background": {

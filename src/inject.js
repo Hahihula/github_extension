@@ -9,9 +9,16 @@
   forkedFrom.style.cursor = 'pointer';
   forkedFrom.classList.add('btn');
   forkedFrom.classList.add('btn-sm');
+  // removing previosly created coppy button
+  var oldCoppyButton = document.getElementById('github_chrome_extension_clipboard_copy_branch_name');
+  if(oldCoppyButton) {
+  	oldCoppyButton.parentElement.removeChild(oldCoppyButton);
+  }
+  // creating button for copiing the repository name and branch
   var copyButton = document.createElement('clipboard-copy');
   copyButton.setAttribute('value',forkedFrom.title);
-  copyButton.className = 'btn btn-outline btn-sm'
+  copyButton.setAttribute('id','github_chrome_extension_clipboard_copy_branch_name');
+  copyButton.className = 'btn btn-outline btn-sm';
   copyButton.setAttribute('aria-label','Copy the ropository and branch');
   copyButton.setAttribute('role','button');
   copyButton.setAttribute('style','line-height:13px;padding:3px;');

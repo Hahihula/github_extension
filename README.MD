@@ -1,3 +1,5 @@
+# now obsolete... the github added the functions this extension was providing
+
 # simple google chrome github extension
 
 now it only makes the `from` on pullrequest clickable
